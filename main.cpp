@@ -1,9 +1,7 @@
 #include <iostream>
-
 using namespace std;
 
-int main()
-{
+int main(){
     //declare
     string fn,ln,bmi_stat;
     int age, weight;
@@ -23,7 +21,7 @@ int main()
     if (bmi>=40){
         string bmi_stat = "Class 3 Obesity (Severe Obesity)";
 
-            cout << "Member: " << ln << ',' << fn << "\n";
+    cout << "Member: " << ln << ',' << fn << "\n";
     cout << "Age/Gender: " << age << ',' << gen<< "\n";
     cout << "Weight: " << weight<< "\n";
     cout << "Height: " << height<< "\n";
@@ -34,7 +32,7 @@ int main()
     else if (bmi>=35){
         string bmi_stat = "Class 2 Obesity";
 
-            cout << "Member: " << ln << ',' << fn << "\n";
+    cout << "Member: " << ln << ',' << fn << "\n";
     cout << "Age/Gender: " << age << ',' << gen<< "\n";
     cout << "Weight: " << weight<< "\n";
     cout << "Height: " << height<< "\n";
@@ -78,7 +76,7 @@ int main()
     else{
         string bmi_stat = "Underweight";
 
-            cout << "Member: " << ln << ',' << fn << "\n";
+    cout << "Member: " << ln << ',' << fn << "\n";
     cout << "Age/Gender: " << age << ',' << gen<< "\n";
     cout << "Weight: " << weight<< "\n";
     cout << "Height: " << height<< "\n";
@@ -86,8 +84,6 @@ int main()
     cout << "Remark: "  << bmi_stat<< "\n";
 
     }
-
-
 
     return 0;
 }
