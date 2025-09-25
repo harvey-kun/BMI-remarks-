@@ -19,62 +19,20 @@ int main(){
     //cal
     float bmi = (weight/(height*height));
     if (bmi>=40){
-        string bmi_stat = "Class 3 Obesity (Severe Obesity)";
-
-    cout << "Member: " << ln << ',' << fn << "\n";
-    cout << "Age/Gender: " << age << ',' << gen<< "\n";
-    cout << "Weight: " << weight<< "\n";
-    cout << "Height: " << height<< "\n";
-    cout << "BMI: "    << bmi<< "\n";
-    cout << "Remark: "  << bmi_stat<< "\n";
-
+        bmi_stat = "Class 3 Obesity (Severe Obesity)";
     }
     else if (bmi>=35){
-        string bmi_stat = "Class 2 Obesity";
-
-    cout << "Member: " << ln << ',' << fn << "\n";
-    cout << "Age/Gender: " << age << ',' << gen<< "\n";
-    cout << "Weight: " << weight<< "\n";
-    cout << "Height: " << height<< "\n";
-    cout << "BMI: "    << bmi<< "\n";
-    cout << "Remark: "  << bmi_stat<< "\n";
-
+        bmi_stat = "Class 2 Obesity";
     }
     else if (bmi>=30){
-        string bmi_stat = "Class 1 Obesity";
-
-    cout << "Member: " << ln << ',' << fn << "\n";
-    cout << "Age/Gender: " << age << ',' << gen<< "\n";
-    cout << "Weight: " << weight<< "\n";
-    cout << "Height: " << height<< "\n";
-    cout << "BMI: "    << bmi<< "\n";
-    cout << "Remark: "  << bmi_stat<< "\n";
-
-    }
-    else if (bmi>=25){
-        string bmi_stat = "Overweight";
-
-    cout << "Member: " << ln << ',' << fn << "\n";
-    cout << "Age/Gender: " << age << ',' << gen<< "\n";
-    cout << "Weight: " << weight<< "\n";
-    cout << "Height: " << height<< "\n";
-    cout << "BMI: "    << bmi<< "\n";
-    cout << "Remark: "  << bmi_stat<< "\n";
-
-    }
+        bmi_stat = "Class 1 Obesity";
+}
     else if (bmi>=18.5){
-        string bmi_stat = "Normal";
-
-    cout << "Member: " << ln << ',' << fn << "\n";
-    cout << "Age/Gender: " << age << ',' << gen<< "\n";
-    cout << "Weight: " << weight<< "\n";
-    cout << "Height: " << height<< "\n";
-    cout << "BMI: "    << bmi<< "\n";
-    cout << "Remark: "  << bmi_stat<< "\n";
-
+        bmi_stat = "Normal";
     }
     else{
-        string bmi_stat = "Underweight";
+        bmi_stat = "Underweight";
+    }
 
     cout << "Member: " << ln << ',' << fn << "\n";
     cout << "Age/Gender: " << age << ',' << gen<< "\n";
@@ -82,8 +40,6 @@ int main(){
     cout << "Height: " << height<< "\n";
     cout << "BMI: "    << bmi<< "\n";
     cout << "Remark: "  << bmi_stat<< "\n";
-
-    }
 
     return 0;
 }
